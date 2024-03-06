@@ -1,0 +1,8 @@
+// this function restricts the fields being surfaced from the lookup when creating an email object in Dynamics 365 CRM/CS
+function defaultToCcBccContactUser(executionContext) {
+	var formContext = executionContext.getFormContext();
+	var lookupTypes = ["contact", "systemuser"];
+	formContext.getControl("to").setEntityTypes(lookupTypes);
+	formContext.getControl("cc").setEntityTypes(lookupTypes);
+	formContext.getControl("bcc").setEntityTypes(lookupTypes);
+}
