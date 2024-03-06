@@ -3,7 +3,7 @@
 
 <h3 align="left">Here is a collection of the code snippets that may come in handy (and save you a lot of time) as you are diving into the Dynamics advanced config with JS:</h3>
 <ul>
-  <li>How to restrict your lookups when creating an email object:
+  <li>How to restrict your lookups when creating an email object: <a href="https://github.com/diamitry/Dynamics365/tree/950cfec91469a21ca5514672d8f8a45f929b0bfc/RestrictLookup">Restrict Lookup</a>
   </li>
 <p align="left">
 </p>
