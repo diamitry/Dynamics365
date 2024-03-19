@@ -12,4 +12,4 @@ Here are the steps:
 - Retrieve the returned values from the API call, and set the values
 - And, of course, use console.log(yourvarhere) and try...catch to monitor performance
 
-The code also contains methods to handling a variety of user actions (such as preventing the code to run if the value is not provided, not overriding user-specified fields, and re-setting all values in case user made a mistake, i.e. called a wrong policy)
+The code also contains methods to handling a variety of user actions (such as preventing the code to run if the value is not provided, not overriding user-specified fields, and re-setting all values in case a user puts a different lookup)
