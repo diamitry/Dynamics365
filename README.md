@@ -9,10 +9,12 @@
   <li>How to prepopulate fields from a lookup value: <a href="https://github.com/diamitry/Dynamics365/tree/8e19d91678524f51b6fbe33b8b7763b166a0000d/AutoFillonLookup">autofill on lookup.</a>
   <li>How to validate file or text input: <a href="https://github.com/diamitry/Dynamics365/tree/main/RestrictLookup">validate field input or uploaded file names for special characters.</a>
   </li>
+</ul>
 
-  <h3 align="left">Power Apps Pages:</h3>
+<h3 align="left">Power Apps Pages:</h3>
 <ul>
   <li>How to trigger Power Automate flow on a multi-step form submission: <a href="https://github.com/diamitry/Dynamics365/tree/main/Multi-StepFormSubmission">muti-Step form submission.</a>
   </li>
+</ul>
 <p align="left">
 </p>
