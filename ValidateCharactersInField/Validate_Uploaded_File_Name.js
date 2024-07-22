@@ -1,22 +1,31 @@
-//This function validates the uploaded file name, and triggers during the OnSave of the form
-function validate_uploaded_file_name(executionContext) {
+// This function is called via valuploadedfilename on the form, which is tied to the field onchange event.
+function valuploadedfilename(executionContext) {
     var formContext = executionContext.getFormContext();
-    var pattern = /[^0-9a-zA-Z\\.\\_-]/g;  // list of characters which are allowed: numbers, lower and upper case letters, periods, underscores, dashes
-    var fieldName = 'new_loadedfile'; // field where validation is applied
-    var currentValue = formContext.getAttribute(fieldName).getValue();
-	var currentControl = formContext.getControl(fieldName);
-    var notificationId = "FieldNotificationId";  // ID for the notification, which will be used to set or clear it upon correct upload
-	
-	//capture file name attribute from the returned list of values
-	var fileName = currentValue.fileName;
-
-	//trim to remove leading spaces
-	fileName = fileName.trim();
-
-	//Validation with a notification
-	if (pattern.test(fileName)) {
-		currentControl.setNotification("Invalid filename - only letter, number, period, underscore, and dash characters are allowed; spaces are not allowed.", notificationId);
-	} else {
-		currentControl.clearNotification(notificationId);
-	}
+    formContext.getAttribute('your_entityform').addOnChange(validateFileName);
 }
+
+function validateFileName(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var pattern = /^[0-9a-zA-Z\._-]+$/;
+    var fieldName = 'your_field';
+    var currentValue = formContext.getAttribute(fieldName).getValue();
+    var currentControl = formContext.getControl(fieldName);
+    var notificationId = "FieldNotificationId";
+
+    // Check if currentValue is null
+    if (currentValue === null) {
+        currentControl.clearNotification(notificationId);
+        return; // Exit the function early
+    }
+
+    var fileName = currentValue.fileName;
+    fileName = fileName.trim();
+
+    if (!pattern.test(fileName)) {
+        currentControl.setNotification("Invalid value - only upper case, lower case, period, number, underscore, and dash characters are allowed.", notificationId);
+    } else {
+        currentControl.clearNotification(notificationId);
+    }
+}
+
+valuploadedfilename(executionContext);
