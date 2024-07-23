@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Dmitry</h1>
-<h2 align="center">I am currenty developing all things Dynamics 365 CE, Dataverse, Power Automate, Azure, and Databricks.</h2>
+<h2 align="center">I am currenty developing all things Power Platform, Dynamics 365, Dataverse, Power Automate, Azure, and Databricks.</h2>
 
 <h3 align="left">Here is a collection of the code snippets that may come in handy (and save you a lot of time) as you are exploring the Dynamics, Power Apps, and Dataverse ecosystem.</h3>
 
