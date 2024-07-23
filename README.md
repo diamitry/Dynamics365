@@ -14,6 +14,7 @@
 <h3 align="left">Power Apps Pages:</h3>
 <ul>
   <li>How to trigger Power Automate flow on a multi-step form submission: <a href="https://github.com/diamitry/Dynamics365/tree/main/Multi-StepFormSubmission">muti-step form submission.</a>
+  <li>How to open hyperlinks in new tabs: <a href="https://github.com/diamitry/Dynamics365/tree/main/OpenLinksNewTab">hyperlink in a new tab.</a>
   </li>
 </ul>
 <p align="left">
