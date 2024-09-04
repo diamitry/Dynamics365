@@ -1,0 +1,12 @@
+<!-- place this script onto the page that loads the form -->
+<script>
+$(document).ready(function(){
+  $("#customerid_name").attr("value", "{{ user.parentcustomerid.name }}");
+  $("#customerid").attr("value", "{{ user.parentcustomerid.id }}");
+  $("#customerid_entityname").attr("value", "account");
+  $("#primarycontactid_name").attr("value", "{{ user.fullname }}");
+  $("#primarycontactid").attr("value", "{{ user.id }}");
+  $("#primarycontactid_entityname").attr("value", "contact");
+  $("#subjectid").val("CaseOptionGuid");
+});
+</script>
