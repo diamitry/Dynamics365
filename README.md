@@ -16,6 +16,7 @@
   <li>How to trigger Power Automate flow on a multi-step form submission: <a href="https://github.com/diamitry/Dynamics365/tree/main/Multi-StepFormSubmission">muti-step form submission.</a>
   <li>How to open hyperlinks in new tabs: <a href="https://github.com/diamitry/Dynamics365/tree/main/OpenLinksNewTab">hyperlink in a new tab.</a>
   <li>How to set and hide mandatory form fields: <a href="https://github.com/diamitry/Dynamics365/tree/main/MandatoryFormFields">set and hide mandatory form fields.</a>
+  <li>How to adjust choices through web roles: <a href="https://github.com/diamitry/Dynamics365/tree/main/WebRolesAndDropdownChoices">trim dropdown choices though web roles.</a>
   </li>
 </ul>
 <p align="left">
